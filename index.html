@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header-bar">
+            <h1>Crypto Tracker</h1>
+            <button class="filter-btn">Filter</button>
+        </div>
+        <div class="search-bar">
+            <label for="search" class="search-label">Coin</label>
+            <input placeholder="Search..." name="search" id="search">
+        </div>
+        <div class="crypto-table-wrapper">
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="filter-menu">
+        <div class="price-filter">
+            <label for="min-price">Price Range:</label>
+            <input placeholder="Minimal Price..." name="min-price" id="min-price">
+            <input placeholder="Maximal Price..." name="max-price" id="max-price">
+        </div>
+        <div class="price-change-filter">
+            <label for="price-change">24h Change:</label>
+            <select class="price-change" name="price-change" id="price-change">
+                <option value="all">All</option>
+                <option value="gainers">Gainers</option>
+                <option value="losers">Losers</option>
+            </select>
+        </div>
+        <div class="market-cap-filter">
+            <label for="market-cap">Market Cap:</label>
+            <select class="market-cap" name="market-cap" id="market-cap">
+                <option value="mil">>1M</option>
+                <option value="ten-mil">>10M</option>
+                <option value="hundred-mil">>100M</option>
+                <option value="bil">>1B</option>
+                <option value="ten-bil">>100B</option>
+                <option value="hundred-bil">>100B</option>
+                <option value="tril">>1T</option>
+            </select>
+        </div>
+        <button class="apply-btn">Apply</button>
+    </div>
+</body>
+</html>

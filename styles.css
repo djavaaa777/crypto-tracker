@@ -1,0 +1,151 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ebeaea;
+}
+.wrapper{
+  width:100%;
+  max-width:800px;
+  background-color: #fff;
+  margin:50px auto 50px auto;
+  padding:24px 54px;
+  border-radius: 7px;
+}
+.coin-name-wrapper{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.coin-name,.coin-price,.coin-price-change,.coin-market-cap{
+  font-weight: 600;
+  font-size: 15px;
+}
+.coin-name{
+  font-size: 16px;
+}
+.no-results {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.crypto-table th,
+.crypto-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.up {
+  color: green;
+}
+
+.down {
+  color: red;
+}
+
+.crypto-table img {
+  vertical-align: middle;
+}
+
+.header-bar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn,.apply-btn{
+  background-color: #495460;
+  color:#fff;
+  padding: 6px 24px;
+  font-weight: 600;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.filter-btn:hover,.apply-btn:hover{
+  background-color: #39424c;
+}
+
+.header-bar h1{
+  font-size: 28px;
+}
+.search-bar{
+  display: flex;
+  gap:20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.search-label{
+  font-size: 14px;
+  font-weight: 600;
+  color:#374151;
+  margin-left: 6px;
+}
+#search,.filter-menu input,.filter-menu select{
+  padding:8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 200px;
+  font-size: 14px;
+}
+.filter-menu{
+  padding:50px;
+  border-radius: 7px;
+  width:100%;
+  max-width:600px;
+  height:350px;
+  background-color: #fff;
+  position: absolute;
+  top:30%;
+  left:50%;
+  z-index: 1000;
+  transform: translateX(-50%);
+  display: none;
+}
+.filter-menu.active{
+  display:block;
+}
+.filter-menu label{
+  font-size: 16px;
+  font-weight: 600;
+  color:#666;
+  margin-right: 5px;
+}
+.filter-menu div{
+  margin-bottom: 50px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 500;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
