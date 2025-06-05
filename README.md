@@ -20,7 +20,7 @@ A simple web app that allows you to track the top 50 cryptocurrencies with dynam
 
 ## 🌐 Live Demo
 
-_(Добавим после публикации на GitHub Pages)_
+👉 [Click here to try the app](https://djavaaa777.github.io/crypto-tracker/)
 
 ## 📂 Project Structure
 crypto-tracker/  
